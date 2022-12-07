@@ -73,7 +73,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h2>What if you can separate sounds based on different and non-mutually semantic concepts?</h2>
+                        <h2>What if you can separate sounds based on different and non-mutually exclusive semantic
+                            concepts?</h2>
                         <span class="meta">Posted by <a href="#">Thymios</a> on December 3rd, 2022</span>
                     </div>
                 </div>
@@ -109,7 +110,7 @@
                     <h2> Spatial location of the speaker (aka distance-based separation) </h2>
 
                     <h3> Query: Near-field speaker </h3>
-                    Imagine a situation that you want to focus on the person who lies in the closest distance from
+                    Imagine a situation where you want to focus on the person nearest to
                     the microphone (aka you wanna focus on the person right in front of you).
                     <div class="container py-5">
                     <div class="row">
@@ -183,7 +184,7 @@
                     </div>
 
                     <h3> Query: Far-field speaker </h3>
-                    Imagine a situation that you want to focus on the person who lies in the biggest distance from
+                    Imagine a situation where you want to focus on the person farthest from
                     the microphone.
                     <div class="container py-5">
                     <div class="row">
@@ -258,8 +259,8 @@
 
                     <h3> A multi-lingual mixture with query: Near-field speaker </h3>
                     This is a slightly different scenario where the model can still retrieve the speaker closest to
-                    the microphone but can also exploit semantic information which has been trained on such as the
-                    language conditioning. Notice that the model does not know where exactly to put the cap sound but
+                    the microphone but can also exploit semantic information used to train the network such as language
+                    conditioning. Notice that the model does not know where exactly to put the cap sound but
                    really nicely disentangles the two speakers in the right order :)
                     <div class="container py-5">
                     <div class="row">
@@ -408,9 +409,9 @@
 
 
                     <h3> Query: Female speaker from a two-female speaker input-mixture </h3>
-                    In the paper we perform an extensive analysis on how to deal with these generative cases where
+                    In the paper we perform an extensive analysis on how to deal with these degenerate cases where
                     either the target or the non-target waveform is zero or the input-mixture itself. Here the model
-                    has been trained using a small sampling probability durin heterogeneous training to deal with
+                    has been trained using a small sampling probability during heterogeneous training to deal with
                     cases like that and notice that the estimated non-target (aka other) waveform is almost silent.
                     <div class="container py-5">
                     <div class="row">
